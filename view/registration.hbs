@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    
+<section class="h-100 h-custom gradient-custom-2">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12">
+          <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+            <div class="card-body p-0">
+              <div class="row g-0">
+                <div class="col-lg-6">
+                  <div class="p-5">
+                    <h3 class="fw-normal mb-5" style="color: #4835d4;">General Infomation</h3>
+    
+                    <div class="row">
+                      <div class="col-md-6 mb-4 pb-2">
+  
+                        <div class="form-outline">
+                          <input type="text" id="form3Examplev2" class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Examplev2">First name</label>
+                        {{#unless data.fname}}
+                            <div style="color:rgba(0, 0, 255, 0.799);">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTUCA9K-EhWY-dOMzkRciiRp7UqLT41TSNHNr8jrQ8&s" alt="" width="20"
+                            height="22">
+                                Please enter first name.
+                            </div>
+                        {{/unless}}
+                        </div>
+  
+                      </div>
+                      <div class="col-md-6 mb-4 pb-2">
+  
+                        <div class="form-outline">
+                          <input type="text" id="form3Examplev3" class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Examplev3">Last name</label>
+                        {{#unless data.lname}}
+                            <div style="color:rgba(0, 0, 255, 0.799);">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTUCA9K-EhWY-dOMzkRciiRp7UqLT41TSNHNr8jrQ8&s" alt="" width="20"
+                            height="22">
+                                Please enter last name.
+                            </div>
+                        {{/unless}}
+                        </div>
+  
+                      </div>
+                    </div>
+  
+                    <div class="mb-4 pb-2">
+                      <div class="form-outline">
+                        <input type="text" id="form3Examplev4" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Examplev4">Email</label>
+                      {{#unless data.email}}
+                            <div style="color:rgba(0, 0, 255, 0.799);">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTUCA9K-EhWY-dOMzkRciiRp7UqLT41TSNHNr8jrQ8&s" alt="" width="20"
+                            height="22">
+                                Please enter email
+                            </div>
+                        {{/unless}}
+                      </div>
+                    </div>
+  
+                    <div class="row">
+                      <div class="col-md-6 mb-4 pb-2 mb-md-0 pb-md-0">
+  
+                        <div class="form-outline">
+                          <input type="text" id="form3Examplev5" class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Examplev5">Business Arena</label>
+                        {{#unless data.business}}
+                            <div style="color:rgba(0, 0, 255, 0.799);">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTUCA9K-EhWY-dOMzkRciiRp7UqLT41TSNHNr8jrQ8&s" alt="" width="20"
+                            height="22">
+                                Please enter business arena.
+                            </div>
+                        {{/unless}}
+                        
+                        </div>
+  
+                      </div>
+                      
+                    </div>
+  
+                  </div>
+                </div>
+  
+                    <div class="mb-4 pb-2">
+                      <div class="form-outline form-white">
+                        <input type="text" id="form3Examplea2" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Examplea2">Street + Nr</label>
+                      {{#unless data.street}}
+                            <div style="color:rgba(0, 0, 255, 0.799);">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTUCA9K-EhWY-dOMzkRciiRp7UqLT41TSNHNr8jrQ8&s" alt="" width="20"
+                            height="22">
+                                Please enter street + Nr
+                            </div>
+                        {{/unless}}
+                      </div>
+                    </div>
+  
+                    <div class="row">
+                      <div class="col-md-5 mb-4 pb-2">
+  
+                        <div class="form-outline form-white">
+                          <input type="text" id="form3Examplea4" class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Examplea4">Zip Code</label>
+                        {{#unless data.zipcode}}
+                            <div style="color:rgba(0, 0, 255, 0.799);">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTUCA9K-EhWY-dOMzkRciiRp7UqLT41TSNHNr8jrQ8&s" alt="" width="20"
+                            height="22">
+                                Please enter zip code
+                            </div>
+                        {{/unless}}
+                        </div>
+  
+                      </div>
+                      <div class="col-md-7 mb-4 pb-2">
+  
+                        <div class="form-outline form-white">
+                          <input type="text" id="form3Examplea5" class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Examplea5">Place</label>
+                        {{#unless data.place}}
+                            <div style="color:rgba(0, 0, 255, 0.799);">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTUCA9K-EhWY-dOMzkRciiRp7UqLT41TSNHNr8jrQ8&s" alt="" width="20"
+                            height="22">
+                                Please enter place
+                            </div>
+                        {{/unless}}
+                        </div>
+  
+                      </div>
+                    </div>
+  
+                    <div class="mb-4 pb-2">
+                      <div class="form-outline form-white">
+                        <input type="text" id="form3Examplea6" class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Examplea6">Country</label>
+                      {{#unless data.country}}
+                            <div style="color:rgba(0, 0, 255, 0.799);">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTUCA9K-EhWY-dOMzkRciiRp7UqLT41TSNHNr8jrQ8&s" alt="" width="20"
+                            height="22">
+                                Please enter country
+                            </div>
+                        {{/unless}}
+                      </div>
+                    </div>
+  
+                      </div>
+                      <div class="col-md-7 mb-4 pb-2">
+  
+                        <div class="form-outline form-white">
+                          <input type="text" id="form3Examplea8" class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Examplea8">Phone Number</label>
+                        {{#unless data.phonenumber}}
+                            <div style="color:rgba(0, 0, 255, 0.799);">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTUCA9K-EhWY-dOMzkRciiRp7UqLT41TSNHNr8jrQ8&s" alt="" width="20"
+                            height="22">
+                                Please enter phone number
+                            </div>
+                        {{/unless}}
+                        </div>
+  
+                      </div>
+                    </div>
+  
+                    <div class="form-check d-flex justify-content-start mb-4 pb-3">
+                      <input1 type="checkbox" class="form-check-input me-3" value="" id="form2Example3c" />
+                      <label class="form-check-label text-white" for="form2Example3">
+                        I do accept the <a href="#!" class="text-white"><u>Terms and Conditions</u></a> of your
+                        site.
+                      </label>
+                    </div>
+  
+                    <button type="button" class="btn btn-light btn-lg"
+                      data-mdb-ripple-color="dark">Register</button>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+</body>
+</html>
